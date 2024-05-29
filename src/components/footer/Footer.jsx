@@ -30,12 +30,12 @@ const Footer = () => {
                     esse cillum dolore eu fugiat nulla pariatur.
                 </div>
                 <div className="socialIcons">
-                    <span className="icon">
-                        <a href="https://github.com/samj10022004"><FaGithub  /></a>
-                    </span>
-                    <span className="icon">
-                    <a href="https://www.linkedin.com/in/sanyam-jain-a7ba0922a/"><FaLinkedin /></a>
-                    </span>
+                    <a href="https://github.com/samj10022004"><span className="icon">
+                        <FaGithub  />
+                    </span></a>
+                    <a href="https://www.linkedin.com/in/sanyam-jain-a7ba0922a/"><span className="icon">
+                    <FaLinkedin />
+                    </span></a>
                 </div>
             </ContentWrapper>
         </footer>
