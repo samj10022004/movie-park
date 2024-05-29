@@ -41,7 +41,7 @@ const HeroBanner = () => {
             <span className="subTitle">Millions of movie, Tv shows and people to discover. Explore now.</span>
             <div className="searchInput">
               <input type="text" placeholder="Search for a movie or tv show...." required onKeyUp={searchQueryHandler} onChange={(e)=>setQuery(e.target.value)} />
-              <button >Search</button>   
+              <button onClick={()=>{query.length>0?navigate(`/search/${query}`):navigate("/")}} >Search</button>   
             </div>
           </div>
         </ContentWrapper>
