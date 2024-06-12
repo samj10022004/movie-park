@@ -11,7 +11,7 @@ const Similar = ({ mediaType, id }) => {
     return (
         <Carousel
             title={title}
-            data={data?.results}
+            data={data?.release_date}
             loading={loading}
             endpoint={mediaType}
         />
