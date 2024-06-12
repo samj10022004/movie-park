@@ -11,7 +11,7 @@ const Recommendation = ({ mediaType, id }) => {
     return (
         <Carousel
             title="Recommendations"
-            data={data?.release_date}
+            data={data?.results}
             loading={loading}
             endpoint={mediaType}
         />

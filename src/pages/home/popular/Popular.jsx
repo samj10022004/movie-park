@@ -9,13 +9,14 @@ const Popular = () => {
     const onTabChange=(tab)=>{
         setEndPoint(tab==="Movies"? "movie":"tv");
     }
+    console.log(data);
   return (
     <div className='carouselSection'>
         <ContentWrapper>
             <span className='carouselTitle'>What's Popular</span>
             <SwitchTabs data={["Movies","TV Shows"]} onTabChange={onTabChange}/>
         </ContentWrapper>
-        <Carousel data={data?.release_date} loading={loading} endPoint={endPoint}/>
+        <Carousel data={data?.results} loading={loading} endPoint={endPoint}/>
     </div>
   )
 }
